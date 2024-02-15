@@ -22,9 +22,9 @@ In this post I have discussed about developing simple pubsub application with li
 ## Run the Pub-Sub
 
 Follow the below steps to run your local pubsub system:
-Step 1: Clone the repository by running this command: `git clone https://github.com/amancooks08/p2p-poc.git`.
-Step 2: Enter the directory by running the command `cd p2p-poc`.
-Step 3: Run the `go mod tidy` to make sure you have all the dependencies installed.
-Step 4: Open a Terminal and start your subscriber, by running the command: ` go run subscriber/subscriber.go`.
-Step 5: Open another terminal and start your publisher, by running the command: `go run publisher/publisher.go`.
-Step 6: Send a message and check in the subscriber terminal to see that it has been received.
+1. Clone the repository by running this command: `git clone https://github.com/amancooks08/p2p-poc.git`.
+2. Enter the directory by running the command `cd p2p-poc`.
+3. Run the `go mod tidy` to make sure you have all the dependencies installed.
+4. Open a Terminal and start your subscriber, by running the command: ` go run subscriber/subscriber.go`.
+5. Open another terminal and start your publisher, by running the command: `go run publisher/publisher.go`.
+6. Send a message and check in the subscriber terminal to see that it has been received.
