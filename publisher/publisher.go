@@ -49,8 +49,8 @@ func main() {
 		panic(err)
 	}
 
-	// join the pubsub topic called librum
-	room := "librum"
+	// join the pubsub topic called p2p-pubsub
+	room := "p2p-pubsub"
 	topic, err := gossipSub.Join(room)
 	if err != nil {
 		panic(err)
