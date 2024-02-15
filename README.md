@@ -8,3 +8,16 @@ This is a POC, about implementing the `libp2p`'s `go-libp2p` package for impleme
 
 ### gossipsub
 The libp2p-pubsub has created a number of peer-to-peer pubsub implementations(e.g gossipsub, floodsub, fpisub) that have enabled real time peer-to-peer pubsub application development(read more about these different pubsub implementation from [here](https://hackernoon.com/exploring-libp2p-pubsub-protocol-implementations-891i32jq)). `gossipsub` is named after the fact that peers gossip to each other about which messages they have seen and use this information to maintain a message delivery network.
+
+## Scenario
+In this post I have discussed about developing simple pubsub application with libp2p gossipsub. In the pubsub application, the publisher peer take messages from command line and push them to a topic called *p2p-pubsub*. Then the subscribers of that *p2p-pubsub* topic receive the data via peer-to-peer gossipsub. This is a simplified version of my pubsub system.
+
+## Run the Pub-Sub
+
+Follow the below steps to run your local pubsub system:
+> Step 1: Clone the repository by running this command: `git clone https://github.com/amancooks08/p2p-poc.git`.
+> Step 2: Enter the directory by running the command `cd p2p-poc`.
+> Step 3: Run the `go mod tidy` to make sure you have all the dependencies installed.
+> Step 4: Open a Terminal and start your subscriber, by running the command: ` go run subscriber/subscriber.go`.
+> Step 5: Open another terminal and start your publisher, by running the command: `go run publisher/publisher.go`.
+> Step 6: Send a message and check in the subscriber terminal to see that it has been received.
