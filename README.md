@@ -12,12 +12,19 @@ The libp2p-pubsub has created a number of peer-to-peer pubsub implementations(e.
 ## Scenario
 In this post I have discussed about developing simple pubsub application with libp2p gossipsub. In the pubsub application, the publisher peer take messages from command line and push them to a topic called *p2p-pubsub*. Then the subscribers of that *p2p-pubsub* topic receive the data via peer-to-peer gossipsub. This is a simplified version of my pubsub system.
 
+ <img width="1345" alt="Screenshot 2024-02-15 at 1 11 32 PM" src="https://github.com/amancooks08/p2p-poc/assets/67535968/fe02f53f-d5c1-4326-ad36-a6b7afedfa98">
+ 
+<img width="1327" alt="Screenshot 2024-02-15 at 1 12 22 PM" src="https://github.com/amancooks08/p2p-poc/assets/67535968/c1568a4f-dc72-403b-8eb7-a4133b25e0ba">
+
+<img width="1327" alt="Screenshot 2024-02-15 at 1 12 42 PM" src="https://github.com/amancooks08/p2p-poc/assets/67535968/9c3c295f-df38-44af-a6de-a3e855ff935e">
+
+
 ## Run the Pub-Sub
 
 Follow the below steps to run your local pubsub system:
-> Step 1: Clone the repository by running this command: `git clone https://github.com/amancooks08/p2p-poc.git`.
-> Step 2: Enter the directory by running the command `cd p2p-poc`.
-> Step 3: Run the `go mod tidy` to make sure you have all the dependencies installed.
-> Step 4: Open a Terminal and start your subscriber, by running the command: ` go run subscriber/subscriber.go`.
-> Step 5: Open another terminal and start your publisher, by running the command: `go run publisher/publisher.go`.
-> Step 6: Send a message and check in the subscriber terminal to see that it has been received.
+Step 1: Clone the repository by running this command: `git clone https://github.com/amancooks08/p2p-poc.git`.
+Step 2: Enter the directory by running the command `cd p2p-poc`.
+Step 3: Run the `go mod tidy` to make sure you have all the dependencies installed.
+Step 4: Open a Terminal and start your subscriber, by running the command: ` go run subscriber/subscriber.go`.
+Step 5: Open another terminal and start your publisher, by running the command: `go run publisher/publisher.go`.
+Step 6: Send a message and check in the subscriber terminal to see that it has been received.
